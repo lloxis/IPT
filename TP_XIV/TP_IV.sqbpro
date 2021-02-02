@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/chtil/Downloads/communes.sqlite" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="3955"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">select pop2010
+from communes
+where nom = &quot;Tourcoing&quot;</sql><sql name="SQL 2">select pop2010 - pop1968 as acc
+from communes
+where nom = &quot;Sainte Colombe&quot;</sql><sql name="SQL 3">select (surf + 0.0 / pop2010) as densite
+from communes
+where nom = &quot;Sainte Colombe&quot;</sql><sql name="SQL 4">select nom, pop2010
+from communes
+order by pop2010 desc
+limit 10</sql><sql name="SQL 5">select nom as nom_ville, (surf + 0.0 / pop2010) as densite
+from communes
+order by densite desc
+limit 10
+</sql><sql name="SQL 6">select nom, length(nom) as longeure_nom
+from communes
+order by longeure_nom desc
+limit 1</sql><sql name="SQL 7">select nom, pop2010 as pop
+from communes
+where pop &lt; 10
+order by pop</sql><sql name="SQL 8">select nom, dept, pop2010 as pop, surf
+from communes
+where pop &gt; 30000 AND surf &lt; 5
+order by pop desc</sql><sql name="SQL 9">select nom, dept, pop2010, surf, (pop2010 + 0.0 )/ surf as densite
+from communes
+where densite &gt; 20000
+order by densite desc
+</sql><sql name="SQL 10">select nom, dept, pop2010, surf, (pop2010 + 0.0 )/ surf as densite
+from communes
+where densite &lt; 1
+order by densite desc
+</sql><current_tab id="9"/></tab_sql></sqlb_project>
