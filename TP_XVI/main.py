@@ -87,3 +87,24 @@ plt.plot(temps, vitesse)
 plt.subplot(3, 1, 3)
 plt.plot(temps, pos)
 plt.show()
+
+# exo 13
+fichier2 = open("moto1.txt", "w")
+for i in range(len(pos)):
+    fichier2.write(str(temps[i]) +"  "+ str(pos[i])+"\n")
+fichier2.close()
+
+# exo 15
+def indice_permier_max(liste):
+    maxi = -100
+    indice_maxi = 0
+    for i in range(len(liste)):
+        element = liste[i]
+        if element > maxi:
+            maxi = element
+            indice_maxi = i
+    return indice_maxi
+
+t1 = indice_permier_max(pos)*Delta_t
+e1 = pos[indice_permier_max(pos)]
+print(t1, e1)
