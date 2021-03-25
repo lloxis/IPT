@@ -70,16 +70,16 @@ def liste_alea(x0, e, n):
 A = liste_alea(12.5, 0.05, 10000)
 B = liste_alea(8.3, 0.05, 10000)
 X = []
-for i in range(10000):
-    X.append(A[i]+B[i])
+# for i in range(10000):
+#     X.append(A[i]+B[i])
 # histogramme(X, 20)
 
 # exo 8
 A = liste_alea(12.5, 0.05, 10000)
 B = liste_alea(8.32, 0.005, 10000)
 X = []
-for i in range(10000):
-    X.append(A[i]+B[i])
+# for i in range(10000):
+#     X.append(A[i]+B[i])
 # histogramme(X, 20)
 
 # exo 9
@@ -88,8 +88,8 @@ B = liste_alea(8.3, 0.05, 10000)
 C = liste_alea(4.7, 0.05, 10000)
 D = liste_alea(13.4, 0.05, 10000)
 X = []
-for i in range(10000):
-    X.append((A[i]+B[i]) / (C[i]+D[i]))
+# for i in range(10000):
+#     X.append((A[i]+B[i]) / (C[i]+D[i]))
 # histogramme(X, 50)
 
 # exo 10
